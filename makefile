@@ -1,7 +1,7 @@
 all:	executable	clean
 
 executable:	list.o	list_as_tree.o heap_sort.o	main.o
-	gcc list.o list_as_tree.o heap_sort.o main.o -o heap
+	gcc list.o list_as_tree.o heap_sort.o main.o -o heap -lm
 
 main.o:	main.c
 	gcc -c main.c
